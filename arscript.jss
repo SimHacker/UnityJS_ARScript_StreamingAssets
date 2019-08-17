@@ -1,0 +1,42 @@
+////////////////////////////////////////////////////////////////////////
+// arscript.js
+// Don Hopkins, Ground Up Software.
+
+
+////////////////////////////////////////////////////////////////////////
+// Globals.
+
+
+if (!window.globals) {
+    window.globals = {};
+}
+
+
+////////////////////////////////////////////////////////////////////////
+// Utilities.
+
+
+////////////////////////////////////////////////////////////////////////
+// Create everything.
+
+
+function LoadObjects()
+{
+    console.log("arscript.js: LoadObjects");
+
+    globals.ar = bridge.createObject({
+        prefab: 'Prefabs/ARKitBridge'
+    });
+
+    globals.light = bridge.createObject({
+        prefab: 'Prefabs/ARKitLight'
+    });
+
+    globals.pointCloud = bridge.createObject({
+        prefab: 'Prefabs/ARKitPointCloud'
+    });
+
+}
+
+
+////////////////////////////////////////////////////////////////////////
